@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haptic Experience Questionnaire</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS (Optional for further customization) -->
+    <link rel="stylesheet" href="style.css?v=10021" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #f0f0f0 !important;">
+      <div class="container-fluid">
+        <img src="haptics.png" alt="Logo" width="30" height="30" style="margin-left: 15px; margin-right: 5px;" class="d-inline-block align-top" />
+        <a class="navbar-brand" href="#">Haptic Experience Inventory</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <!-- data-bs-toggle="collapsenav-link" -->
+
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#structure">Structure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#related-work">Related Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#user-guide">User Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#download">Download HXI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="padding-top: 62px;">
+      <!-- Your content goes here -->
+    </div>
+
+    <!-- Introduction Section -->
+    <img src="par.png" alt="banner" width="100%" style="padding-left: 12px;padding-right: 12px;"/>
+
+    <section id="introduction" class="container py-5 d-flex flex-column bg-light justify-content-center align-items-center">
+      <!-- <h1 class="text-primary text-center">Haptic Experience Inventory (HXI)</h1> -->
+      <h2 class="text-primary text-center">The first validated questionnaire measuring HX</h2>
+      <p class="text-center">
+        The Haptic Experience Inventory (HXI) is the first validated questionnaire specifically designed to measure user experiences when interacting with haptic technology. 
+      </p>
+
+      <div class="boxes-container text-center">
+        <div class="box">
+          <i class="fa-solid fa-laptop custom-icon"></i>
+          <p>An easily deployable tool for researchers and developers to assess HX in a standardized and reliable way.</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-users custom-icon"></i>
+          <p>Proven to be applicable to differnet demographcis, across different contexts and haptic modalities.</p>
+        </div>
+        <div class="box">
+          <i class="fa-regular fa-lightbulb custom-icon"></i>
+          <p>Provide actionable insights and support informed decisions throughout the design process.</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-chart-line custom-icon"></i>
+          <p>Compare experiences across multiple products or iterations for targeted adjustments and optimizations.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Structure Section -->
+    <section id="structure" class="container py-5 d-flex flex-column bg-light gray-background justify-content-center align-items-center">
+      <h2 class="text-primary text-center">Structure</h2>
+
+      <div class="content-container">
+        <img src="model.png" style="max-width: 250px;" alt="Model Image">
+        <p class="text-center">
+          The HXI is built around five core factors that represent distinct aspects of the haptic experience: Autotelics, Realism, Harmony, Discord, Involvement. Each factor captures a dimension of how users perceive and evaluate haptic interactions, contributing to a more nuanced understanding of the haptic experience.
+        </p>
+      </div>
+
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs factor-nav" id="cardTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="autotelics-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#autotelics"
+            type="button"
+            role="tab"
+            aria-controls="autotelics"
+            aria-selected="true"
+          >
+            Autotelics
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="realism-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#realism"
+            type="button"
+            role="tab"
+            aria-controls="realism"
+            aria-selected="false"
+          >
+            Realism
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="harmony-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#harmony"
+            type="button"
+            role="tab"
+            aria-controls="harmony"
+            aria-selected="false"
+          >
+            Harmony
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="discord-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#discord"
+            type="button"
+            role="tab"
+            aria-controls="discord"
+            aria-selected="false"
+          >
+            Discord
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="involvement-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#involvement"
+            type="button"
+            role="tab"
+            aria-controls="involvement"
+            aria-selected="false"
+          >
+            Involvement
+          </button>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="autotelics"
+          role="tabpanel"
+          aria-labelledby="autotelics-tab"
+        >
+          <div class="card h-100 mx-2">
+            <div class="card-body">
+              <p class="card-text">
+                Autotelics is a distinct hedonic dimension, characterized as "the touch experience as an end in and of
+itself" as opposed to “instrumental”. It refers to the positive experience gained from haptic stimuli alone, without
+considering its functional utility as in the system. In short, it means the haptic sensation itself feels good, pleasant, or
+pleasurable
+              </p>
+              <p class="card-text">
+                High-Autotelic Example: A relaxation app with a soft pneumatic vest providing gentle pressure sensations for a
+                calming experience.
+                <br>
+                Low-Autotelic Example: A 4D movie with unpleasant jabs in the back, leading users to avoid the sensation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="realism"
+          role="tabpanel"
+          aria-labelledby="realism-tab"
+        >
+          <div class="card h-100 mx-2">
+            <div class="card-body">
+              <p class="card-text">
+                Realism is the extent to which sensory stimuli could simulate or represent
+sensations that one would expect to encounter in reality. In contrast, sensations that feel strange, unnatural or surreal
+are not considered to be realistic.<br>
+Realism encompasses not only faithful recreation but also intentional design choices that may involve incorporating
+exaggerated or abstract elements to evoke believable sensations that align with users’ expectations and intentions
+nonetheless. For example, “exaggerated simulated physics (which) has been a staple of digital games” [34], they are
+also considered realistic and believable in its own way. Haptic feedback is thus high realism when it represents the
+sensations expected in its context.
+              </p>
+              <p class="card-text">
+                High-Realism Example: An action-adventure game where haptic feedback closely mimics the tension of a bowstring
+and the release of an arrow.<br>
+Low-Realism Example: A messaging app with long, low buzzes that feel strange and unnatural.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="harmony"
+          role="tabpanel"
+          aria-labelledby="harmony-tab"
+        >
+          <div class="card h-100 mx-2">
+            <div class="card-body">
+              <p class="card-text">
+                Harmony emerges as a pivotal factor shaping the overall quality of sensory
+encounters. Within the context of haptic feedback, Harmony refers to the seamless integration of haptic sensations
+with other sensory modalities, resulting in a unified and cohesive multi-sensory experience. Previous research has also
+explored a similar concept known as congruence, described as the intuitive match between different modalities
+              </p>
+              <p class="card-text">
+                High-Harmony Example: A game where vibrotactile footstep feedback is synchronized with visual and sound
+                effects, matching different terrains.<br>
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="discord"
+          role="tabpanel"
+          aria-labelledby="discord-tab"
+        >
+          <div class="card h-100 mx-2">
+            <div class="card-body">
+              <p class="card-text">
+                Discord represents the lack of harmony in haptic experiences. It refers to the jarring, unpleasant, or disjointed aspects of haptic feedback that detract from the overall sensory experience. Discord occurs when haptic sensations are poorly integrated with other sensory modalities or when they create a sense of disconnection or discomfort for the user. Discord is the negative counterpart to Harmony. Discord may be more immediately noticeable than Harmony, acting as a "hygiene" factor.
+              </p>
+              <p class="card-text">
+                High-Discord Example: A racing game where the controller vibrations are out of sync with on-screen collisions, creating a confusing and disjointed experience.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="involvement"
+          role="tabpanel"
+          aria-labelledby="involvement-tab"
+        >
+          <div class="card h-100 mx-2">
+            <div class="card-body">
+              <p class="card-text">
+                Involvement refers to a psychological state characterized by heightened
+                engagement, focus and attention, as a result of the haptic sensations. Close to what was originally termed "immersion"
+                by Kim and Schneider, involvement primarily focuses on the level of engagement experienced by users. Involvement
+                is closely related to immersion and often regarded as a precursor to it.
+                
+              </p>
+              <p class="card-text">
+                High-Involvement Example: A VR storytelling experience with subtle vibrations enhancing emotional connection
+                with the plot.<br>
+                Low-Involvement Example: A virtual museum tour with generic haptic feedback that fails to enhance engagement
+                with the virtual environment.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Work Section -->
+    <section
+      id="related-work"
+      class="container py-5 d-flex flex-column bg-light justify-content-center align-items-center"
+    >
+      <h2 class="text-primary text-center">Related Work</h2>
+      <p class="text-center">
+        The HXI was established based on the HX model proposed by Kim and Schneider.
+      </p>
+      <div class="boxes-container text-center">
+        <div class="rwbox">
+          <i class="fa-regular fa-newspaper custom-icon"></i>
+          <p>Kim and Schneider defined and developed a theoritical model of HX. This model identified five experiential factors of Harmony, Expressivity, Autotelics, Immersion, and Realism. This model captured unique constructs and emphasis within haptic technology.</p>
+          </p>
+          <p style="font-size: 13px;"><a style="color: black;" target='_blank' href="https://dl.acm.org/doi/abs/10.1145/3313831.3376280">https://dl.acm.org/doi/abs/10.1145/3313831.3376280</a></p>
+        </div>
+        <div class="rwbox">
+          <i class="fa-solid fa-list-check custom-icon"></i>
+          <p>Based on Kim and Schneider's model, Sathiyamurthy et al. and Anwar et al. in turn developed an item pool, and used factor analysis to try to establish a HX questionnaire. Unfortunately, no reliable and validated tool was produced, highlighting complexities involved.</p>
+          <p style="font-size: 13px;"><a style="color: black;" target='_blank' href="https://ieeexplore.ieee.org/document/9517220">https://ieeexplore.ieee.org/document/9517220</a></p>
+          <p style="font-size: 13px;"><a style="color: black;" target='_blank' href="https://doi.org/10.1145/3544548.3581514">https://doi.org/10.1145/3544548.3581514</a></p>
+          
+
+        </div>
+        <div class="rwbox">
+          <i class="fa-solid fa-clipboard-list custom-icon"></i>
+          <p>Drawing insights from previous attempts, Shi and Schneider drafted new sets of items through theoretical construction, expert reviews, and cognitive interviews and established and validated the HXI through exploratory and confirmatory factor analysis.</p>
+          <p style="font-size: 13px;"><a style="color: black;" target='_blank' href="">PLACEHOLDERPLACEHOLDERPLACEHOLDERPLACEHOLDER</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Guide Section -->
+    <section
+    id="user-guide"
+    class="container py-5 d-flex flex-column bg-light justify-content-center gray-background align-items-center"
+  >
+    <h2 class="text-primary text-center">User Guide</h2>
+
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="openTab(event, 'section1')">Administering</button>
+        <button class="tab-button" onclick="openTab(event, 'section2')">Scoring</button>
+        <button class="tab-button" onclick="openTab(event, 'section3')">Interpreting scores</button>
+        <button class="tab-button" onclick="openTab(event, 'section4')">Reporting HXI results</button>
+        <button class="tab-button" onclick="openTab(event, 'section5')">Best practices using HXI</button>
+      </div>
+      <div class="tab-content">
+        <div id="section1" class="tab-section active">
+          <p>
+            This questionnaire is structured using a <b>7-point Likert scale</b>, where participants will indicate their level of agreement with each statement by selecting one of the following options: <i>Strongly Disagree, Disagree, Somewhat Disagree, Neither Agree Nor Disagree, Somewhat Agree, Agree, Strongly Agree</i>.
+            <br><br>The HXI items should be shown in shuffled <b>randomized order</b> when possible.
+            <br><br>We also recommend <b>explaining what 'haptic sensations' and 'others senses' mean</b> immediately before
+            the HXI items. The explainings provided when validating are "<i>Haptic sensations: Anything that you feel with the sense of touch. It could be vibrations, force, temperature,
+            pressure, or any other physical sensation.
+            Other senses: Sensory modalities beyond touch, such as vision and hearing.</i>"
+          </p>
+        </div>
+        <div id="section2" class="tab-section">
+          <p>
+            The HXI consists of five factors (Autotelics, Involvement, Realism, Discord, and Harmony), each measured by four statements (items). The seven options should be scored from 1 (Strongly Disagree) to 7 (Strongly Agree). 
+            <br><br>To calculate a <b>factor score</b>, each individual's responses to the four items in each factorshould be averaged. 
+            <br>To calculate the overall <b>general score: reverse the score for Discord first</b>, then add it with other four factors scores.
+            <br><br>Thus, General Score = Autotelics + Involvement + Realism + Harmony + ( 8 − Discord )
+          </p>
+        </div>
+        <div id="section3" class="tab-section">
+          <p>
+            The HXI provides a standardized tool for evaluating haptic experiences and captures distinct important aspects of haptic interactions that shape HX.
+            <br><br>It is important to note, though, that <b>haptic applications have different goals and contexts, and the relative importance of each factor may vary across each product</b>. This was also echoed in expert interviews. Depending on the context, not all factors are targeted equally. For example, a relaxation app may prioritize Autotelics, while haptic design for a game may prioritize Involvement.
+          </p>
+        </div>
+        <div id="section4" class="tab-section">
+          <p>
+            We <b>strongly encourage</b> future studies using HXI to report <b>Cronbach’s alpha (reliability) and how the HXI relates to other measurements</b> (e.g., other UX questionnaires, overall ratings, psychophysiological measures like electrodermal activity and eye-tracking data). 
+            <br><br>
+            This will help further establish the validity and reliability of the HXI, provide a more nuanced understanding of how it can be used in combination with other methods to provide a comprehensive evaluation of haptic experiences in haptic design process.
+          </p>
+        </div>
+        <div id="section5" class="tab-section">
+          <p>
+            ..........
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+      
+    <!-- Download Form Section -->
+    <section
+      id="download"
+      class="container py-5 d-flex flex-column bg-light justify-content-center align-items-center"
+    >
+      <h2 class="text-primary text-center">Download</h2>
+      <p class="text-center">
+        The HXI is free to use for all. We hope this instrument will be useful for researchers and developers in the field of haptic technology. 
+        <br><br>You can contact us at xxx for feedback. 
+        <br><br>Cite HXI in your paper: <span class="cite" id="bibtex">BibTex</span> <span class="cite" id="apa">APA</span> <span class="cite" id="iEEE">iEEE</span> <span class="cite" id="bibtex">BibTex</span>
+        <p id="message" class="mt-3"></p> 
+        <a href="HXI_en.pdf" target="_blank" class="btn btn-primary mt-3">Manual (Items and instruction)</a>
+        <a href="" target="_blank" class="btn btn-primary mt-3">Excel Scoring Template</a>
+
+      </p>
+
+
+      
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 XXX. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js?v=10021"></script>
+  </body>
+</html>
