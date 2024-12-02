@@ -9,8 +9,15 @@ body {
   background-color: #f0f0f0 !important;
 }
 
+h2{
+  color: #8100b4 !important;
+  border-bottom-style: none !important;
+}
 
-
+.text-primary {
+  color: #8100b4 !important;
+  border-bottom-style: none !important;
+}
 /* Navbar Customization */
 
 .nav-item {
