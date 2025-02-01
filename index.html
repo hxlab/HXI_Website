@@ -412,12 +412,12 @@
           <p>
             Drawing insights from previous attempts, Shi and Schneider drafted
             new sets of items through theoretical construction, expert reviews,
-            and cognitive interviews and established and validated the HXI
+            and cognitive interviews, and established and validated the HXI
             through exploratory and confirmatory factor analysis.
           </p>
           <p style="font-size: 13px">
             <a style="color: black" target="_blank" href=""
-              >PLACEHOLDERPLACEHOLDERPLACEHOLDERPLACEHOLDER</a
+              >https://doi.org/10.1145/3706598.3713834</a
             >
           </p>
         </div>
@@ -532,6 +532,48 @@
       </div>
     </section>
 
+
+    <section
+      id="share-work"
+      class="container py-5 d-flex flex-column bg-light justify-content-center gray-background align-items-center"
+    >
+      <h2 class="text-primary text-center">Share Your Work</h2>
+      <div class="text-center">
+        <p>If you are using HXI in your study, consider letting us know how you used it. This could benefit our understanding of application and future directions of HXI.</p>
+      </div>
+      
+      <form class="w-50">
+        <div class="mb-3">
+          <label for="deviceType" class="form-label">Device Type</label>
+          <select class="form-select" id="deviceType" onchange="toggleOtherDeviceTypeInput()">
+            <option value="vibrotactile">Vibrotactile</option>
+            <option value="force-feedback">Force-feedback</option>
+            <option value="surface">Surface</option>
+            <option value="mid-air">Mid-air</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="mb-3" id="otherDeviceTypeDiv" style="display: none;">
+          <label for="otherDeviceType" class="form-label">Please specify</label>
+          <input type="text" class="form-control" id="otherDeviceType" />
+        </div>
+        <div class="mb-3">
+          <label for="paperLink" class="form-label">Link to your paper</label>
+          <input type="url" class="form-control" id="paperLink" />
+        </div>
+        <div class="mb-3">
+          <label for="feedback" class="form-label">Any feedback you have on HXI</label>
+          <textarea class="form-control" id="feedback" rows="3"></textarea>
+        </div>
+        <div class="mb-3; text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+      </form>
+
+    </section>
+
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2024 XXX. All rights reserved.</p>
@@ -541,5 +583,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="script.js?v=10021"></script>
+
+    <script>
+      function toggleOtherDeviceTypeInput() {
+        const deviceType = document.getElementById('deviceType').value;
+        const otherDeviceTypeDiv = document.getElementById('otherDeviceTypeDiv');
+        if (deviceType === 'others') {
+          otherDeviceTypeDiv.style.display = 'block';
+        } else {
+          otherDeviceTypeDiv.style.display = 'none';
+        }
+      }
+    </script>
+
   </body>
 </html>
